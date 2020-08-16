@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from bootstrapmaster.com/live/metro/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jan 2018 16:57:00 GMT -->
 
 <head>
 
@@ -110,14 +109,11 @@
     <script src="{{asset('backend/js/jquery.cookie.js')}}"></script>
     <script src="{{asset('backend/js/jquery.uniform.min.js')}}"></script>
     <script src='{{asset('backend/js/fullcalendar.min.js')}}'></script>
-
     <script src="{{('backend/js/custom.js')}}"></script>
 
 
     <!-- end: JavaScript-->
 
 </body>
-
-<!-- Mirrored from bootstrapmaster.com/live/metro/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jan 2018 16:57:01 GMT -->
 
 </html>
