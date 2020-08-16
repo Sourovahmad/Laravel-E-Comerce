@@ -63,6 +63,7 @@
                     </div>
                     <h2>Login to your account</h2>
                     <form class="form-horizontal" action="" method="post">
+                    {{@csrf_field()}}
                         <fieldset>
 
                             <div class="input-prepend" title="Admin_email">
