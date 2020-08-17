@@ -21,8 +21,9 @@ Route::get('/', 'homecontroller@index');
 
 
             //   backend Routes
- Route::get('/admin', 'admincontroller@index');
- Route::get('/dashboard', 'admincontroller@show_dashboard');
+ Route::get('/admin', 'admincontroller@index')->name('admin');
+ Route::get('/dashboard', 'admincontroller@show_dashboard')->name('dashboard');
+ Route::post('/admin-dashboard', 'admincontroller@dashboard')->name('admin-dashboard');
 
 
 
