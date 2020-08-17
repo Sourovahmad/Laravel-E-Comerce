@@ -325,31 +325,8 @@
 		<div class="row-fluid">
 				
 			<!-- start: Main Menu -->
-			<div id="sidebar-left" class="span2">
-				<div class="nav-collapse sidebar-nav">
-					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li><a href="{{route('dashboard')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
-						<li><a href="messages.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> All Categories</span></a></li>
-						<li><a href="tasks.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Categories</span></a></li>
-						<li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> All Brands </span></a></li>
-						<li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Brands</span></a></li>
-						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Products</span><span class="label label-important"> 3 </span></a>
-							<ul>
-								<li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Add products</span></a></li>
-								<li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet">All Products</span></a></li>
-
-							</ul>	
-						</li>
-						<li><a href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Slider</span></a></li>
-						<li><a href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> Social Links</span></a></li>
-						<li><a href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> Shop Name</span></a></li>
-						<li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> top Client</span></a></li>
-						<li><a href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> top Shop</span></a></li>
-
-
-					</ul>
-				</div>
+		  
+			@include('layout.sidebar')
 			</div>
 			<!-- end: Main Menu -->
 			
@@ -389,14 +366,7 @@
 	
 	<div class="clearfix"></div>
 	
-	<footer>
-
-		<p>
-			<span style="text-align:left;float:left">&copy; 2013 <a href="http://bootstrapmaster.com/" alt="Bootstrap Themes">creativeLabs</a></span>
-			<span class="hidden-phone" style="text-align:right;float:right">Powered by: <a href="http://admintemplates.co/" alt="Bootstrap Admin Templates">Metro</a></span>
-		</p>
-
-	</footer>
+	@include('layout.footer')
 
 
 		<!-- start: JavaScript-->
@@ -409,7 +379,7 @@
 		<script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
 
 		<script src="{{asset('backend/js/jquery.cookie.js')}}"></script>
-		<script src="{{asset('backend/js/fullcalendar.min.js')}}"></script>	')}}
+		<script src="{{asset('backend/js/fullcalendar.min.js')}}"></script>
 		<script src="{{asset('backend/js/jquery.dataTables.min.js')}}"></script>
 		<script src="{{asset('backend/js/excanvas.js')}}"></script>
 		<script src="{{asset('backend/js/jquery.flot.js')}}"></script>
@@ -422,7 +392,7 @@
 		<script src="{{asset('backend/js/jquery.cleditor.min.js')}}"></script>
 		<script src="{{asset('backend/js/jquery.noty.js')}}"></script>
 		<script src="{{asset('backend/js/jquery.elfinder.min.js')}}"></script>
-		<script src="{{asset('backend/js/jquery.raty.min.js')}}"></script>')}}
+		<script src="{{asset('backend/js/jquery.raty.min.js')}}"></script>
 		<script src="{{asset('backend/js/jquery.iphone.toggle.js')}}"></script>
 		<script src="{{asset('backend/js/jquery.uploadify-3.1.min.js')}}"></script>
 		<script src="{{asset('backend/js/jquery.gritter.min.js')}}"></script>
