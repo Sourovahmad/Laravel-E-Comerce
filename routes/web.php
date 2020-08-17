@@ -21,6 +21,7 @@ Route::get('/', 'homecontroller@index');
 
 
             //   backend Routes
+Route::get('/logout','superadmincontroller@logout')->name('logout');
  Route::get('/admin', 'admincontroller@index')->name('admin');
  Route::get('/dashboard', 'admincontroller@show_dashboard')->name('dashboard');
  Route::post('/admin-dashboard', 'admincontroller@dashboard')->name('admin-dashboard');
