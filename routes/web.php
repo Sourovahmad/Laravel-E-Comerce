@@ -1,5 +1,6 @@
 <?php
 
+use App\Categories;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,10 +22,41 @@ Route::get('/', 'homecontroller@index');
 
 
             //   backend Routes
-Route::get('/logout','superadmincontroller@logout')->name('logout');
+ Route::get('/logout','superadmincontroller@logout')->name('logout');
  Route::get('/admin', 'admincontroller@index')->name('admin');
  Route::get('/dashboard', 'admincontroller@show_dashboard')->name('dashboard');
  Route::post('/admin-dashboard', 'admincontroller@dashboard')->name('admin-dashboard');
+
+
+
+
+              // Categories Routes
+
+
+ Route::get('/add-categories','CategoriesController@index');
+Route::post('catigori_store','CategoriesController@store')->name('catigori_store');
+Route::get('catigori_show','CategoriesController@show')->name('catigori_show');
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
