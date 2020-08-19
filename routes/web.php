@@ -33,7 +33,7 @@ Route::get('/', 'homecontroller@index');
               // Categories Routes
 
 
- Route::get('/add-categories','CategoriesController@index');
+ Route::get('/categories','CategoriesController@index')->name('categories');
 Route::post('catigori_store','CategoriesController@store')->name('catigori_store');
 Route::get('catigori_show','CategoriesController@show')->name('catigori_show');
  

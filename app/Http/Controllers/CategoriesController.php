@@ -15,7 +15,8 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        return view('categories.add_categories');
+       $categories = Categories::all();
+       return view('categories.view_categories',compact('categories'));
     }
 
     /**
@@ -41,7 +42,7 @@ class CategoriesController extends Controller
         $categories->categorie_description = $request->categorie_description;
         $categories->publication_status = $request->publication_status;
         $categories->save();
-       return redirect(URL::to('add-categories'));
+       return redirect(URL::to('catigori_show'));
 
     }
 
