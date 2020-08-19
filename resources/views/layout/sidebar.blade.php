@@ -4,7 +4,7 @@
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li><a href="{{route('dashboard')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
 						<li><a href="{{route('categories')}}"><i class="icon-list-alt"></i><span class="hidden-tablet"> All Categories</span></a></li>
-						<li><a href="{{URL::to('add-categories')}}"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Categories</span></a></li>
+						<li><a href="{{route('add_categories')}}"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Categories</span></a></li>
 						<li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> All Brands </span></a></li>
 						<li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Add Brands</span></a></li>
 						<li>

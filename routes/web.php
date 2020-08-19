@@ -34,6 +34,7 @@ Route::get('/', 'homecontroller@index');
 
 
  Route::get('/categories','CategoriesController@index')->name('categories');
+ Route::get('/add_categories','CategoriesController@create')->name('add_categories');
 Route::post('catigori_store','CategoriesController@store')->name('catigori_store');
 Route::get('catigori_show','CategoriesController@show')->name('catigori_show');
  
