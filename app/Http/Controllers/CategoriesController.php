@@ -53,7 +53,7 @@ class CategoriesController extends Controller
      */
     public function show(Categories $categories)
     {
-     return view('categories')
+     return view('categories.view_categories');
     }
 
     /**
