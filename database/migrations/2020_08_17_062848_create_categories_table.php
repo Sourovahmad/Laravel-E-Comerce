@@ -17,7 +17,6 @@ class CreateCategoriesTable extends Migration
             $table->increments('categorie_id');
             $table->string('categorie_name');
             $table->string('categorie_description');
-            $table->integer('publication_status');
             $table->timestamps();
         });
     }

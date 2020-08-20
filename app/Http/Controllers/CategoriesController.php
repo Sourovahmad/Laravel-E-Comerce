@@ -40,9 +40,8 @@ class CategoriesController extends Controller
         $categories = new categories;
         $categories->categorie_name = $request->categorie_name;
         $categories->categorie_description = $request->categorie_description;
-        $categories->publication_status = $request->publication_status;
         $categories->save();
-       return redirect(URL::to('catigori_show'));
+       return redirect(URL::to('add_categories'));
 
     }
 
