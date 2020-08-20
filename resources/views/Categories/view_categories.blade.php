@@ -26,25 +26,34 @@
 					<div class="box-content">
 						<table class="table table-striped table-bordered bootstrap-datatable datatable">
 						  <thead>
-							  <tr>
-								  <th>Username</th>
-								  <th>Date registered</th>
-								  <th>Role</th>
-								  <th>Status</th>
+							  <tr>  
+							      <th>id </th>
+								  <th>category Name</th>
+								  <th>Category descreption</th>
+
+								  <th> CategoryStatus</th>
 								  <th>Actions</th>
 							  </tr>
 						  </thead>   
 						  <tbody>
-							<tr>
-								<td>Anton Phunihel</td>
-								<td class="center">2012/01/01</td>
-								<td class="center">Member</td>
+						  @foreach($categories as $category)
+							<tr> 
+							<td>{{$category->categorie_id}}</td>
+
+								<td>{{$category->categorie_name}}</td>
+								<td class="center">{{$category->categorie_description}}</td>
+						 @if($category->categorie_status === 1)
 								<td class="center">
 									<span class="label label-success">Active</span>
 								</td>
+							  @else
+							  <td class="center">
+									<span class="label label-success">unactive</span>
+								</td>
+                           @endif
 								<td class="center">
 									<a class="btn btn-success" href="#">
-										<i class="halflings-icon white zoom-in"></i>  
+										<i class="halflings-icon white thumbs-up"></i>  
 									</a>
 									<a class="btn btn-info" href="#">
 										<i class="halflings-icon white edit"></i>  
@@ -58,6 +67,7 @@
 									</a>
 								</td>
 							</tr>
+							@endforeach
 						  </tbody>
 					  </table>            
 					</div>

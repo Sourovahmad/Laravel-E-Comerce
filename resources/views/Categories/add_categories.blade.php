@@ -44,7 +44,7 @@
 							</div>
 							<label class="control-label" for="typeahead"> publication status </label>
 							  <div class="controls">
-								<input type="checkbox" class="span6 typeahead" name ="publication_status" value="0" >
+								<input type="checkbox"  name="categorie_status" class="span6 typeahead" name ="publication_status" value="1" >
 								
 							  </div>
 							<div class="form-actions">
