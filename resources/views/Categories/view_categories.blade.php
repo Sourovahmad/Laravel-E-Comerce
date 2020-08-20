@@ -2,7 +2,8 @@
 @section('admin_content')
 
 <div id="content" class="span10">
-			
+			          
+
 			
 			<ul class="breadcrumb">
 				<li>
@@ -30,7 +31,6 @@
 							      <th>id </th>
 								  <th>category Name</th>
 								  <th>Category descreption</th>
-
 								  <th> CategoryStatus</th>
 								  <th>Actions</th>
 							  </tr>
@@ -42,7 +42,7 @@
 
 								<td>{{$category->categorie_name}}</td>
 								<td class="center">{{$category->categorie_description}}</td>
-						 @if($category->categorie_status === 1)
+					          	 @if($category->categorie_status === 1)
 								<td class="center">
 									<span class="label label-success">Active</span>
 								</td>
@@ -63,7 +63,7 @@
 									</a>
 								</td>
 								
-										
+	        								 	
 									</a>
 								</td>
 							</tr>
@@ -71,7 +71,10 @@
 						  </tbody>
 					  </table>            
 					</div>
-				</div><!--/span-->
+				</div> <!--/span-->
 			
-			</div><!--/row-->
+			</div> <!--/row-->
 @endsection
+
+
+
