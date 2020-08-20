@@ -48,7 +48,7 @@
 								</td>
 							  @else
 							  <td class="center">
-									<span class="label label-success">unactive</span>
+									<span class="label label-secondary">unactive</span>
 								</td>
                            @endif
 								<td class="center">
