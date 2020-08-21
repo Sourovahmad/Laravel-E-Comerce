@@ -42,7 +42,7 @@
 
 								<td>{{$category->categorie_name}}</td>
 								<td class="center">{{$category->categorie_description}}</td>
-					          	 @if($category->categorie_status === 1)
+					          	 @if($category->categorie_status == 1)
 								<td class="center">
 									<span class="label label-success">Active</span>
 								</td>
@@ -50,11 +50,22 @@
 							  <td class="center">
 									<span class="label label-secondary">unactive</span>
 								</td>
-                           @endif
+                           @endif     
+
+
+						   @if($category->categorie_status == 1)
 								<td class="center">
+									<a class="btn btn-danger" href="#">
+										<i class="halflings-icon white thumbs-down"></i>  
+									</a>
+
+                                    @else 
+									<td class="center">
 									<a class="btn btn-success" href="#">
 										<i class="halflings-icon white thumbs-up"></i>  
 									</a>
+                           @endif
+
 									<a class="btn btn-info" href="#">
 										<i class="halflings-icon white edit"></i>  
 									</a>
